@@ -1,0 +1,74 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# NPM
+package-lock.json
+package.json
+
+# Images
+*.png
+*.jpg
+*.svg
+*.ico
+
+# Fonts
+*.ttf
+*.eot
+*.otf
+*.woff
+*.woff2
+
+# Configurations
+.gitignore
+.prettierignore
+.tool-versions
+.gitkeep
+.prettierrc
+.editorconfig
+
+# Deploy
+deploy.sh
+
+# Angular Files
+angular.json
+main.ts
+polyfills.ts
+test.ts
+tsconfig.app.json
+tsconfig.spec.json
+tsconfig.json
+tslint.json
