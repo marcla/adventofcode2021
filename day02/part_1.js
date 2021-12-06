@@ -54,5 +54,5 @@ fs.readFile('./input.txt', 'utf8', (err, data) => {
   console.log(`First puzzle answer is: ${resultPart1}`); //2117664
 
   const resultPart2 = _.pipe(splitting, splitActionAndScore, aimGroup, finalDepth)(data);
-  console.log(`Second puzzle answer is: ${resultPart2}`); //
+  console.log(`Second puzzle answer is: ${resultPart2}`); //2073416724
 });
