@@ -10,7 +10,7 @@ const pipe =
   };
 
 const debug = (val) => {
-  console.log(val);
+  console.dir(val);
 
   return val;
 };
@@ -22,9 +22,15 @@ const chunk =
   (values) =>
     values.map((current, index, array) => [...array].splice(index, length)).filter((item) => item.length === length);
 
+const sum = (a, b) => a + b;
+
+const toNumber = (value) => Number(value);
+
 module.exports = {
   pipe,
   chunk,
   debug,
+  sum,
   splittingNewLine,
+  toNumber,
 };
