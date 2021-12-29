@@ -20,11 +20,13 @@ const splittingNewLine = (text) => text?.toString().trim().split(/\n/);
 const chunk =
   (length = 2) =>
   (values) =>
-    values.map((current, index, array) => [...array].splice(index, length)).filter((item) => item.length === length);
+    values.map((_, index, array) => [...array].splice(index, length)).filter((item) => item.length === length);
 
 const sum = (a, b) => a + b;
 
-const toNumber = (value) => Number(value);
+const toNumber = (value) => parseInt(value, 10);
+
+const buildArray = (size, value) => new Array(size).fill(value);
 
 module.exports = {
   pipe,
@@ -33,4 +35,5 @@ module.exports = {
   sum,
   splittingNewLine,
   toNumber,
+  buildArray,
 };
